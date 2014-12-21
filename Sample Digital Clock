@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html> 
+<head> 
+<title> DIGITAL CLOCK </title>
+<script> 
+// define a function 2 display current 00:00
+function displayTime()
+{
+var elt = document.getElementById("clock");
+var now = new Date();
+elt.innerHTML = now.toLocaleTimeString();
+setTimeout(displayTime, 1000); 
+}
+window.onload = displayTime;
+</script>
+
+<style> 
+#clock
+{
+font: bold 24pt sans;
+background: #ddf;
+padding: 10px;
+border: solid black 2px;
+border-radius:10px;
+}
+</style>
+</head>
+<body> 
+<h1> DIGITAL CLOCK </h1>
+<span id= "clock" > </span>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
