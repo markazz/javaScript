@@ -81,8 +81,12 @@ var element_6 = document.getElementById("element6");
 element_6.textContent = lion.runningSpeed;
 
 
+// to display the method
 
-document.write("The speed difference is:");
+var myElement7 = document.getElementById("element7");
+myElement7.textContent = lion.speedDifference();
+
+
 
 
 
