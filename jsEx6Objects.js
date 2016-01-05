@@ -17,6 +17,11 @@ The lion Object has a method speedDifference that returns the
 */
 
 
+
+
+
+//Literal Notation
+
 var lion = 
 	{
 
