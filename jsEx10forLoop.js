@@ -47,3 +47,63 @@ for(i=1; i<myArraySize; i++)
 
 //to link the elements in html 
 document.getElementById("theHeadings").innerHTML = msg;
+
+
+/*
+ALTERNATE METHOD
+Reference: Conor Casey (Cork Training centre)
+
+
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+var msg = '';
+for(var i = 0; i<6; i++){
+msg += (i+1) + '<br>';
+}
+var el1 = document.getElementById('result1');
+el1.innerHTML = msg;
+ 
+var msg2 = '';
+for(var i = 1; i<7; i++){
+    msg2 += '&lt;h' + i + '&gt;' + '<br>';
+}
+var el2 = document.getElementById('result2');
+el2.innerHTML = msg2;
+ 
+var msg3 = '';
+for(var i = 1; i<7; i++){
+    msg3 += '<h' + i + '>' + 'Heading' + i + '</h' + i + '>' + '<br>';
+}
+var el3 = document.getElementById('result3');
+el3.innerHTML = msg3;
+
+
+
+
+
+
+
+*/
+
+
+
+
+
