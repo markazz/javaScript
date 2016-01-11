@@ -32,7 +32,7 @@ document.getElementById("week1").innerHTML = msg;
 
 /*
 Alternate method:
-Reference: Conor Casey (Cork Training Center)
+Reference: Conor Casey (Cork Training Centre)
 Date: 11/01/2016
 
 
