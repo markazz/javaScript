@@ -30,7 +30,30 @@ while (i < weekArraySize)
 document.getElementById("week1").innerHTML = msg;
 
 
+/*
+Alternate method:
+Reference: Conor Casey (Cork Training Cork)
+Date: 11/01/2016
 
+
+var weekDays = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
+var i = 0;
+var msg = '';
+var d = new Date();
+var today = d.getDay();
+while (i < weekDays.length)
+{
+    if(i=== today){
+        msg += '<p>' + weekDays[i] + ' .... That\'s today!</p>';
+    }
+    else{
+    msg += '<p>' + weekDays[i] + '</p>';    
+    }
+    i++;
+}
+var el = document.getElementById('result');
+el.innerHTML = msg;
+*/
 
 
 
