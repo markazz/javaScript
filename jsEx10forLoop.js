@@ -48,32 +48,11 @@ for(i=1; i<myArraySize; i++)
 //to link the elements in html 
 document.getElementById("theHeadings").innerHTML = msg;
 
-
 /*
 ALTERNATE METHOD
 Reference: Conor Casey (Cork Training centre)
+Date: 11/01/2016
 
-
-1
-2
-3
-4
-5
-6
-7
-8
-9
-10
-11
-12
-13
-14
-15
-16
-17
-18
-19
-20
 var msg = '';
 for(var i = 0; i<6; i++){
 msg += (i+1) + '<br>';
@@ -94,16 +73,4 @@ for(var i = 1; i<7; i++){
 }
 var el3 = document.getElementById('result3');
 el3.innerHTML = msg3;
-
-
-
-
-
-
-
 */
-
-
-
-
-
