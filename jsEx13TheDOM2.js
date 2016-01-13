@@ -97,32 +97,38 @@ for(var b=0; b < listItemsNodeList.length; b++)
 //********************************************
 //6.	Modify your code so that you can observe the difference between a live nodelist and a static nodelist.
 
+// updated: 13/.1/206
+// reference: Conor Casey (ctc)
 
 // first make changes in the html file 
+// keeps the data of the live elements 
+var liveNodeList = document.getElementsByClassName("orderList");
+	// stores the number of elements in the liveNodeList array
+	var liveNodeListLength = liveNodeList.length;
 
-// first child
-var firstChilder = document.getElementById("child1");
+// stores the data of initial assigned elements 
+var staticNodeList = document.querySelectorAll(".orderList");
+
+	// if the number of elements in the array are greater than zero 	
+	if(liveNodeListLength > 0)
+		{
+
+		// updating the second element in the array 
+		//rede is dummy class..... can be a class name in css or html file 
+		liveNodeList[1].className= "rede";
+	
+		}
 
 
 
-// the parent
-var parenter =  firstChilder.parentNode;
-
-//store the live nodes
-var liveNode = document.getElementsByClassName("orderList");
-
-//get the element
-var removeElement = document.getElementsByTagName("li")[6];
 
 
-// store the removing element in the container
-var container = removeElement.parentNode;
 
-// removing the element
-container.removeChild(removeElement);
 
-// store the static 
-var statics = document.getElementsByClassName("orderList");
+
+
+
+
 
 
 
