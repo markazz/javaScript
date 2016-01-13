@@ -62,19 +62,17 @@ if(strongNodeList.length > 0)
 
 //4.Assuming that the h1 and h2 elements employ the same class, use getElementsByClassName() to change  that class.
 
-// need to fix the bug here
-var headingNodeList =document.getElementsByClassName("h1,h2.headingClass");
-
-//if it contains items
-if(headingNodeList.length > 0)
+//updated: 13/01/2016
+// reference: Conor Casey (cork training centre)
+var els = document.getElementsByClassName("headingClass");
+var elsSize = els.length;
+if(elsSize > 0)
 {
-
-//loop through each item
-for(var j=0; j<headingNodeList.length; j++)
-	{
-	//change value of class attribute
-	headingNodeList[j].className = "headerColour";
-	}
+	// working backwards in the nodelist array due to bug caused by live nodelist behaviour
+	for(var j= elsSize-1; j>=0; j--)
+		{
+			 els[j].className = "headerColour";
+		}	
 }
 //************************************
 //5.Using querySelectorAll(), 
