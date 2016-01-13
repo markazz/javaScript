@@ -100,10 +100,31 @@ for(var b=0; b < listItemsNodeList.length; b++)
 //6.	Modify your code so that you can observe the difference between a live nodelist and a static nodelist.
 
 
-//live node 
-// first division
-// need to complete 
-var parent = document.getElementById("myFirstDivHtml");
+// first make changes in the html file 
+
+// first child
+var firstChilder = document.getElementById("child1");
+
+
+
+// the parent
+var parenter =  firstChilder.parentNode;
+
+//store the live nodes
+var liveNode = document.getElementsByClassName("orderList");
+
+//get the element
+var removeElement = document.getElementsByTagName("li")[6];
+
+
+// store the removing element in the container
+var container = removeElement.parentNode;
+
+// removing the element
+container.removeChild(removeElement);
+
+// store the static 
+var statics = document.getElementsByClassName("orderList");
 
 
 
