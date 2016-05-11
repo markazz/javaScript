@@ -1,0 +1,25 @@
+function geoFindMe() {
+    if(navigator.geolocation) {
+        navigator.geolocation.getCurrentPosition(success, error, geoOptions);
+    } else {
+        alert("Geolocation services are not supported by your web browser.");
+    }
+}
+
+function success(position) {
+    var latitude = position.coords.latitude;
+    var longitude = position.coords.longitude;
+    var altitude = position.coords.altitude;
+    var accuracy = position.coords.accuracy;
+    alert("lat: " + latitude + " long: " + longitude);
+}
+
+function error(error) {
+    alert("Unable to retrieve your location due to " + error.code + ": " + error.message);
+}
+
+var geoOptions = {
+    enableHighAccuracy: true,
+    maximumAge: 30000,
+    timeout: 27000
+};
