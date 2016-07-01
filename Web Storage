@@ -1,0 +1,96 @@
+// CHECKING BROWSER SUPPORT FOR 
+// localStorage and sessionStorage
+
+// METHOD: 1 
+// Referenced: mozilla.developer.n/w
+
+// function to test whether the browser supports storage 
+//  and if supports is it available ????
+
+
+//  define the function 
+function storageAvailable(type) 
+{
+		// using try catch
+		try 
+			{
+			// storge 2 items in a variable called storage
+				var storage = window[type], ='____storage test ____';
+
+				//  store the item 
+				storage.setItem(x,x);
+				
+				//  remove the item 
+				storage.removeItem(x);
+				
+					return true;
+			} 
+	catch(e) 
+			{
+
+
+				return false;
+				// console.log(e);
+			}
+}// storageAvailable closes
+
+
+
+//  use or call the function 
+if(storageAvailable('sessionStorage')) 
+	{
+		// we can use the sesssionStorage 
+	}
+else 
+	{
+	//  nope we can not use the session Storage 
+	}
+
+
+
+
+
+
+// Method: 2
+// Refrenced: w3schools
+
+if(typeof(Storage) !== "undefined")
+ {
+	// we can use the sesssionStorage 
+ } 
+else 
+{
+	//  nope we can not use the session Storage 
+}
+
+
+
+
+/*
+
+Definitions of the terms:
+
+
+
+1. typeof:
+
+Its an operator that returns a string indicating type 
+of unevaluated operand
+
+
+2. undefined:
+
+Its a primitive value that has been assigned to the variable
+that has been declared to formal arguments which has no 
+actual arhuments 
+
+
+
+
+*/
+
+
+
+
+
+
