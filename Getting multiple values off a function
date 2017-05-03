@@ -1,0 +1,32 @@
+
+// Create a function with 3 parameters
+// 3 parameters for width, height and depth
+
+
+// function declaration
+function getAreaVolume(myWidth, myHeight, myDepth)
+{
+	// varible for storing area
+	var myArea = myWidth*myHeight;
+
+	// varible for storing volume
+	var myVolume = myWidth*myHeight*myDepth;
+
+	// array varible for storing area and volume
+	var mySizes = [myArea, myVolume];
+
+	return mySizes;
+}
+
+
+
+// calling the function
+
+// varible to store calculated area
+// [0] indicates area since its first element in array
+var calculatedArea = getAreaVolume(25, 47, 66)[0];
+
+// varible to store calculated volume
+// [1] indicates volume since its second element in array
+var calculatedVolume = getAreaVolume(25, 47, 66)[1];
+
