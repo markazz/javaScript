@@ -20,7 +20,7 @@
 
 // TASK 4
 //  add event listener to the buttons
-
+var a= 10;
 
 
 
